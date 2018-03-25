@@ -6,4 +6,5 @@ ADDITIONAL:dolnoslaskie
 ---
 PRICE_MIN:5000
 PRICE_MAX:10000
-FUEL:Benzyna, LPG
+FUEL:Benzyna LPG
+BODY:Sedan

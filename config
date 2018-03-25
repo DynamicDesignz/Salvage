@@ -1,0 +1,9 @@
+TYPE:osobowe
+MAKE:audi
+MODEL:a4
+VERSION:b5-1995-2001
+ADDITIONAL:dolnoslaskie
+---
+PRICE_MIN:5000
+PRICE_MAX:10000
+FUEL:Benzyna, LPG

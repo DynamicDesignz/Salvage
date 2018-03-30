@@ -6,5 +6,6 @@ ADDITIONAL:dolnoslaskie
 ---
 PRICE_MIN:5000
 PRICE_MAX:10000
-FUEL:Benzyna LPG
+FUEL:Benzyna
 BODY:Sedan
+YEAR:1996

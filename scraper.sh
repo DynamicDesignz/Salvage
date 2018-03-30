@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -euo pipefail
 # Extracting criteria to a single link and parsing it to __urls file.
 criteria=$(gawk -F: '
 BEGIN{  

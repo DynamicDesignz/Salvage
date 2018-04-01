@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for otomoto_scraper project
+# Scrapy settings for salvage project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'otomoto_scraper'
+BOT_NAME = 'salvage'
 
-SPIDER_MODULES = ['otomoto_scraper.spiders']
-NEWSPIDER_MODULE = 'otomoto_scraper.spiders'
+SPIDER_MODULES = ['salvage.spiders']
+NEWSPIDER_MODULE = 'salvage.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'otomoto_scraper (+http://www.yourdomain.com)'
+#USER_AGENT = 'salvage (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'otomoto_scraper.middlewares.OtomotoScraperSpiderMiddleware': 543,
+#    'salvage.middlewares.SalvageSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'otomoto_scraper.middlewares.OtomotoScraperDownloaderMiddleware': 543,
+#    'salvage.middlewares.SalvageDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'otomoto_scraper.pipelines.OtomotoScraperPipeline': 300,
+#    'salvage.pipelines.SalvagePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

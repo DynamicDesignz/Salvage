@@ -1,8 +1,8 @@
 import scrapy
 import re
 
-class OtomotoSpider(scrapy.Spider):
-    name = "otomoto"
+class Salvage(scrapy.Spider):
+    name = "salvage"
     
     def start_requests(self):
         urls = []

@@ -27,7 +27,7 @@ echo $url > __urls
 DATE=$(date +%Y-%m-%d)
 mkdir -p $DATE
 TIME=$(date +%H:%M)
-scrapy crawl otomoto -o $DATE/raw$TIME.csv
+scrapy crawl salvage -o $DATE/raw$TIME.csv
 
 #sort -n -t , -k 1 output.csv > price_sort.csv
 

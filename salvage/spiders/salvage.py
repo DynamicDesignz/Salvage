@@ -33,9 +33,6 @@ class Salvage(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
-        print(PRICE_MIN[0])
-        print(PRICE_MAX[0])
-        print(FUEL[0])
         for offer in response.css('div.offer-item__content'):
             price = offer.css('span.offer-price__number::text').extract_first().replace(" ", "")
             fuel = offer.css('[data-code=fuel_type]>span::text').extract_first()

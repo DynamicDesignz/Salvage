@@ -11,10 +11,12 @@ BEGIN{
 {
     for (i = 1; i <= number; i++) {
         if (match($1, criteria_array[i])) {
-            if (criteria_array[i] == "ADDITIONAL") {
-                criteria_string=criteria_string"q-"$2"/"
-            } 
-            else criteria_string=criteria_string$2"/"
+            if (length($2) != 0) {
+                if (criteria_array[i] == "ADDITIONAL") {
+                    criteria_string=criteria_string"q-"$2"/"
+                } 
+                else criteria_string=criteria_string$2"/"
+                }
         }
     }
 }
@@ -28,7 +30,3 @@ DATE=$(date +%Y-%m-%d)
 mkdir -p $DATE
 TIME=$(date +%H:%M)
 scrapy crawl salvage -o $DATE/raw$TIME.csv
-
-#sort -n -t , -k 1 output.csv > price_sort.csv
-
-#sort -n -t , -k 2 output.csv > mileage_sort.csv
